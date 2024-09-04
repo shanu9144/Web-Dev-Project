@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Form</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <div class="form-overlay"></div>
+            <div class="form-content">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="form-details">
+            <h2>Form Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Name</td>
+                        <td>Text</td>
+                        <td>User's full name</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Email</td>
+                        <td>User's email address</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>Password</td>
+                        <td>User's password</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Radio</td>
+                        <td>User's gender</td>
+                    </tr>
+                    <tr>
+                        <td>Subscribe to newsletter</td>
+                        <td>Checkbox</td>
+                        <td>Whether user wants to subscribe to the newsletter</td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>Select</td>
+                        <td>User's country</td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>Textarea</td>
+                        <td>User's message</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4a90e2; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-section {
+    max-width: 600px;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/cheese-planet-fantasy-landscape-with-yellow-trees_107791-12414.jpg?t=st=1718819948~exp=1718823548~hmac=6c20093d93fd2f0b017b9a61ff64a5032d8ad504181c05e30cd8b62efd338d81&w=1380') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 8px;
+}
+
+.form-content {
+    position: relative;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff; 
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+/* Form Details Styling */
+.form-details {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+.form-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.form-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-details table th,
+.form-details table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-details table th {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+}
+
+.form-details table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer nav ul li a:hover {
+    color: #357ab8; 
+}

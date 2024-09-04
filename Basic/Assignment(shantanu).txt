@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JsBrain Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>JsBrain Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#latest-posts">Latest Posts</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Welcome to My Blog</h2>
+            <p>Discover a variety of articles on topics ranging from technology to lifestyle. Enjoy reading!</p>
+            <p>Welcome to my blog where I explore various topics related to web development, technology, and beyond. Here, you'll find insightful articles, tutorials, and discussions aimed at both beginners and seasoned professionals.</p>
+            <p>Whether you're looking to dive into the intricacies of CSS layouts, understand the latest JavaScript frameworks, or simply stay updated with the ever-evolving world of digital technology, this blog is your go-to resource.</p>
+            <p>Feel free to explore the latest posts, learn more about me and my journey, and don't hesitate to reach out with your questions or feedback. Let's embark on this learning journey together!</p>
+        </section>
+        <hr size="3">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <img src="https://images.pexels.com/photos/4067768/pexels-photo-4067768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profile Picture" alt="Profile Picture">
+                </div>
+                <div class="about-right">
+                    <p>Hello! I'm a passionate blogger with interests in web development, technology, and more. Follow along as I share my knowledge and experiences.</p>
+                </div>
+            </div>
+        </section>
+        <hr size="3">
+        
+        <section id="latest-posts">
+            <h2>Latest Posts</h2>
+            <article>
+                <h3>Understanding CSS Grid</h3>
+                <p>CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay out items in rows and columns...</p>
+                <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Read more</a>
+            </article>
+            <article>
+                <h3>JavaScript: The Weird Parts</h3>
+                <p>JavaScript is a versatile language, but it has its quirks. Let's dive into some of the more confusing aspects of JavaScript...</p>
+                <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">Read more</a>
+            </article>
+        </section>
+        <hr size="3">
+
+        <section id="table-section">
+            <h2>Blog Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even-row">
+                        <td>June 20, 2024</td>
+                        <td>Introduction to HTML</td>
+                        <td>Published</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td>June 22, 2024</td>
+                        <td>CSS Basics</td>
+                        <td>Draft</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td>June 25, 2024</td>
+                        <td>JavaScript Essentials</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <hr size="3">
+        
+
+
+    
+    <section id="form-section">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <button type="submit" >Submit</button>
+            </div>
+        </form>
+    </section>
+    <hr size="6">
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or comments, feel free to reach out!</p>
+        <p>Email: <a href="mailto:shantanusharma9144@gmail.com">shantanusharma9144@gmail.com</a></p>
+    </section>
+    
+   
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#latest-posts">Latest Posts</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
++++++++++++++++++++++++From HERE CSS START+++++++++++++++++++++
+/* General Styles */
+body {
+    font-family:  Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1c1c1;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(to right, #da7f35, #b58ebd);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* //hover krna par change hoga */
+header nav ul li a:hover {
+    color: #47e0ff;
+}
+/* Introduction Section Styles */
+#introduction {
+    background-color: #f1c1c1;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Latest Posts Section Styles */
+#latest-posts {
+    padding: 20px;
+    margin: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: #555;
+}
+
+article a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section Styles */
+#about {
+    background-color: #f1c1c1;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-left, .about-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 20px;
+    margin: 20px;
+}
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-image:linear-gradient(to right, #da7f35, #b167c0);
+}
+
+/* Table Section Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.even-row {
+    background-color: #f9f9f9;
+}
+
+.odd-row {
+    background-color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer nav ul li a:hover {
+    color: #FF6347; 
+}

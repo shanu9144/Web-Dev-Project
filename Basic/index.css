@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family:  Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1c1c1;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(to right, #da7f35, #b58ebd);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* //hover krna par change hoga */
+header nav ul li a:hover {
+    color: #47e0ff;
+}
+/* Introduction Section Styles */
+#introduction {
+    background-color: #f1c1c1;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Latest Posts Section Styles */
+#latest-posts {
+    padding: 20px;
+    margin: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: #555;
+}
+
+article a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section Styles */
+#about {
+    background-color: #f1c1c1;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-left, .about-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 20px;
+    margin: 20px;
+}
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-image:linear-gradient(to right, #da7f35, #b167c0);
+}
+
+/* Table Section Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.even-row {
+    background-color: #f9f9f9;
+}
+
+.odd-row {
+    background-color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer nav ul li a:hover {
+    color: #FF6347; 
+}

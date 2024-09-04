@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Form</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <div class="form-overlay"></div>
+            <div class="form-content">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="form-details">
+            <h2>Form Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Name</td>
+                        <td>Text</td>
+                        <td>User's full name</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Email</td>
+                        <td>User's email address</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>Password</td>
+                        <td>User's password</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Radio</td>
+                        <td>User's gender</td>
+                    </tr>
+                    <tr>
+                        <td>Subscribe to newsletter</td>
+                        <td>Checkbox</td>
+                        <td>Whether user wants to subscribe to the newsletter</td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>Select</td>
+                        <td>User's country</td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>Textarea</td>
+                        <td>User's message</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

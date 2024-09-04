@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile`</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shantanu Sharma</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Shantanu. I am a Web Developer with a passion for web development. I Enjoy working on projects that involve web development. I have experience in web development and enjoy working on projects.</p>
+                    <p>I am constantly learning and striving to improve my skills in Web development.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/ChessBersurker/phpB4Y6ea.gif" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technologies Used</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bitcoin Prediction Model</td>
+                        <td>This model evaluates the future price of Bitcoin and model is trained on 13 years of data using yahoo finance API.</td>
+                        <td>Python, Streamlit and LSTM ML model</td>
+                        <td><a href="https://github.com/shanu9144/Basic-Bitcoin-prediction-App">View Project</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Landing Page </td>
+                        <td>Just a landing page</td>
+                        <td>React Js, Tailwind</td>
+                        <td rowspan="2"><a href="js-brains-landing-page.vercel.app">View Project</a></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Description of project 2, part 2</td>
+                        <td>Tech 5, Tech 6</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: shantanusharma537@gmail.com</p>
+        <p>Phone: 000000000</p>
+        <p>Social: 
+            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>, 
+            <a href="https://github.com/shanu9144">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #4da0b0; 
+  background: -webkit-linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  ); 
+  background: linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  );
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background: #ffe000; 
+  background: -webkit-linear-gradient(
+    to right,
+    #698b0d,
+    #ffe000
+  ); 
+  background: linear-gradient(
+    to right,
+    #799f0c,
+    #c0b146
+  ); 
+
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-left: 20px;
+  font-size: 2.5rem;
+  color: #010000;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #010000;
+  transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  background: linear-gradient(45deg, #ff6b6b, #f94d6f);
+  color: #fff;
+}
+
+/* Main Content Styling */
+main {
+  margin: 20px 0;
+}
+
+main section {
+  background: #f3e8b2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.811);
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+}
+
+#about .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .about-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#about .about-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  background: #f4d2d2;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Table Styling */
+#projects table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#projects table th,
+#projects table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#projects table th {
+  background: #333;
+  color: #fff;
+}
+
+#projects table tr:nth-child(even) {
+  background: #efd2d2;
+}
+
+#projects table a {
+  color: #333;
+  text-decoration: none;
+}
+
+#projects table a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form label {
+  margin: 10px 0 5px;
+  width: 100%;
+  text-align: left;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact form input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background: #333;
+  color: #dfcccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact form input[type="submit"]:hover {
+  background: linear-gradient(45deg, #ff6b6b, #f94d6f);
+}
+
+/* Footer Styling */
+footer {
+  background: #070606;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* CSS Combinators and Pseudo-classes */
+main section > h2 + p {
+  color: #040404;
+}
+
+header nav ul li a:hover,
+footer a:hover {
+  text-decoration: underline;
+  color: #f4f4f4;
+}
+
+main section::before {
+  content: "♦ ";
+  color: #333;
+}
+
+footer::after {
+  content: " | ";
+  color: #fff;
+}
